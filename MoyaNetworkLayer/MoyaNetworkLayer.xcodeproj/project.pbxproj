@@ -14,6 +14,13 @@
 		2806B828292EB6570070D537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2806B826292EB6570070D537 /* Main.storyboard */; };
 		2806B82A292EB65F0070D537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2806B829292EB65F0070D537 /* Assets.xcassets */; };
 		2806B82D292EB65F0070D537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2806B82B292EB65F0070D537 /* LaunchScreen.storyboard */; };
+		2806B83F292EB7C10070D537 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B835292EB7C10070D537 /* EndPoints.swift */; };
+		2806B840292EB7C10070D537 /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B836292EB7C10070D537 /* ServicesManager.swift */; };
+		2806B841292EB7C10070D537 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B837292EB7C10070D537 /* URLRequestBuilder.swift */; };
+		2806B842292EB7C10070D537 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B838292EB7C10070D537 /* NetworkHelper.swift */; };
+		2806B843292EB7C10070D537 /* HomeServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B83A292EB7C10070D537 /* HomeServices.swift */; };
+		2806B849292EB8440070D537 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B848292EB8440070D537 /* Constants.swift */; };
+		2806B84B292EB9510070D537 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806B84A292EB9510070D537 /* ResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		2806B829292EB65F0070D537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2806B82C292EB65F0070D537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2806B82E292EB65F0070D537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2806B835292EB7C10070D537 /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		2806B836292EB7C10070D537 /* ServicesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		2806B837292EB7C10070D537 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		2806B838292EB7C10070D537 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		2806B83A292EB7C10070D537 /* HomeServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeServices.swift; sourceTree = "<group>"; };
+		2806B848292EB8440070D537 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2806B84A292EB9510070D537 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		68A56875867DEDB07796360D /* Pods-MoyaNetworkLayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaNetworkLayer.debug.xcconfig"; path = "Target Support Files/Pods-MoyaNetworkLayer/Pods-MoyaNetworkLayer.debug.xcconfig"; sourceTree = "<group>"; };
 		7A485A31FBCDBF180933C705 /* Pods-MoyaNetworkLayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoyaNetworkLayer.release.xcconfig"; path = "Target Support Files/Pods-MoyaNetworkLayer/Pods-MoyaNetworkLayer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,12 +80,35 @@
 				2806B820292EB6570070D537 /* AppDelegate.swift */,
 				2806B822292EB6570070D537 /* SceneDelegate.swift */,
 				2806B824292EB6570070D537 /* ViewController.swift */,
+				2806B848292EB8440070D537 /* Constants.swift */,
+				2806B834292EB7C10070D537 /* Networking */,
 				2806B826292EB6570070D537 /* Main.storyboard */,
 				2806B829292EB65F0070D537 /* Assets.xcassets */,
 				2806B82B292EB65F0070D537 /* LaunchScreen.storyboard */,
 				2806B82E292EB65F0070D537 /* Info.plist */,
+				2806B84A292EB9510070D537 /* ResponseModel.swift */,
 			);
 			path = MoyaNetworkLayer;
+			sourceTree = "<group>";
+		};
+		2806B834292EB7C10070D537 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2806B835292EB7C10070D537 /* EndPoints.swift */,
+				2806B836292EB7C10070D537 /* ServicesManager.swift */,
+				2806B837292EB7C10070D537 /* URLRequestBuilder.swift */,
+				2806B838292EB7C10070D537 /* NetworkHelper.swift */,
+				2806B839292EB7C10070D537 /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2806B839292EB7C10070D537 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2806B83A292EB7C10070D537 /* HomeServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		7A54B479CE1B24D0A5CAF421 /* Frameworks */ = {
@@ -88,7 +125,6 @@
 				68A56875867DEDB07796360D /* Pods-MoyaNetworkLayer.debug.xcconfig */,
 				7A485A31FBCDBF180933C705 /* Pods-MoyaNetworkLayer.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +243,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2806B840292EB7C10070D537 /* ServicesManager.swift in Sources */,
 				2806B825292EB6570070D537 /* ViewController.swift in Sources */,
+				2806B843292EB7C10070D537 /* HomeServices.swift in Sources */,
 				2806B821292EB6570070D537 /* AppDelegate.swift in Sources */,
+				2806B842292EB7C10070D537 /* NetworkHelper.swift in Sources */,
+				2806B83F292EB7C10070D537 /* EndPoints.swift in Sources */,
 				2806B823292EB6570070D537 /* SceneDelegate.swift in Sources */,
+				2806B849292EB8440070D537 /* Constants.swift in Sources */,
+				2806B84B292EB9510070D537 /* ResponseModel.swift in Sources */,
+				2806B841292EB7C10070D537 /* URLRequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

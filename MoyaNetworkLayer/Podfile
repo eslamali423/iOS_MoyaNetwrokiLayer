@@ -8,5 +8,5 @@ target 'MoyaNetworkLayer' do
   # Pods for MoyaNetworkLayer
 
 	pod 'Moya'
-
+  pod 'PromiseKit'
 end
